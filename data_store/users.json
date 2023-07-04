@@ -1,0 +1,52 @@
+[
+	{
+		"email": "desarkarjishnu@gmail.com",
+		"password": "$2b$04$6Kzwkk3NPgEK3k/Vd5SQSO2CTy0D6dAwzz3/u6cMu/rdF2po3n/G6",
+		"preferences": [
+			"Business"
+		],
+		"sources": [
+			"newsapi"
+		],
+		"read": [
+			"896b6365-7c51-4964-86f4-7380293fc3fc"
+		],
+		"favorites": [
+			"896b6365-7c51-4964-86f4-7380293fc3fc",
+			"635fed32-a597-484e-bc98-d13869279041"
+		]
+	},
+	{
+		"email": "desarkarjishnu1@gmail.com",
+		"password": "$2b$04$CpKnXdBECRU.chQxI44NG.NDWl08IyXKGvIAMh35o9x17Ky7GI8O.",
+		"preferences": [
+			"Technology",
+			"Politics"
+		],
+		"sources": [
+			"newsdataapi",
+			"newsapi"
+		]
+	},
+	{
+		"email": "jishnu@gmail.com",
+		"password": "$2b$04$/obFcl4qGdigjAstBW1dmuRTgaCTVkG00JssnMfJnmKQAdaFfmXea",
+		"preferences": [
+			"Technology",
+			"Politics"
+		],
+		"sources": [
+			"newsdataapi",
+			"newsapi"
+		],
+		"favorites": [
+			"635fed32-a597-484e-bc98-d13869279041",
+			"a3e0953f-59e1-4110-94b3-ed2f33b51d50",
+			"a108a331-c01f-4868-8850-9fe2d607830c"
+		],
+		"read": [
+			"635fed32-a597-484e-bc98-d13869279041",
+			"78bb0a73-cb95-4968-99bc-0b56476539be"
+		]
+	}
+]
