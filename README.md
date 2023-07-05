@@ -334,15 +334,15 @@ You can test the API using tools like Postman or Curl to ensure it works as expe
 
 ## Optional Extensions
 
-The following optional extensions can be implemented to enhance the functionality of the API:
+The following optional extensions were implemented to enhance the functionality of the API:
 
-- Implement a caching mechanism to store news articles and reduce external API calls. The articles are stored locally. 
+- Implemented a caching mechanism to store news articles and reduce external API calls. The articles are stored locally. 
 - A cron job runs every 2 hours which fetches new articles from the sources and indexes to the MeiliSearch engine.  
-- All REST calls fetch the articles local store. Articles are filtered and searched using MeiliSearch search engine.
+- All REST calls fetch the articles from the local store. Articles are filtered and searched using MeiliSearch search engine.
 - Allow users to mark articles as read or favorite.
-- Implement additional endpoints for retrieving read and favorite articles.
-- Implement a search endpoint to search for news articles based on keywords.
-- Implement a mechanism to periodically update
+- Implemented additional endpoints for retrieving read and favorite articles.
+- Implemented a search endpoint to search for news articles based on keywords.
+- Implemented a mechanism to periodically update
 
 
 ## Conclusion
