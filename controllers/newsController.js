@@ -19,7 +19,7 @@ const getArticlesWithKeyword = async (req, res) => {
 
 // Endpoint - /news/:id/read
 const addReadArticleForUser = async (req, res) => {
-	const updatedReadArticlesResponse = updateArticleForUser(req, res, "read")
+	const updatedReadArticlesResponse = updateArticleForUser(req, "read")
 
 	return res.status(updatedReadArticlesResponse.statusCode).send({
 		message: updatedReadArticlesResponse.message,
@@ -29,7 +29,7 @@ const addReadArticleForUser = async (req, res) => {
 
 // Endpoint - /news/:id/favorite
 const addFavoriteArticleForUser = async (req, res) => {
-	const updatedReadArticlesResponse = updateArticleForUser(req, res, "favorites")
+	const updatedReadArticlesResponse = updateArticleForUser(req, "favorites")
 
 	return res.status(updatedReadArticlesResponse.statusCode).send({
 		message: updatedReadArticlesResponse.message,
@@ -39,7 +39,7 @@ const addFavoriteArticleForUser = async (req, res) => {
 
 // Endpoint - /news/read
 const getReadArticleForUser = async (req, res) => {
-	const response = fetchArticlesForUser(req, res, "read")
+	const response = fetchArticlesForUser(req, "read")
 	return res.status(response.statusCode).send({
 		message: response.message,
 		readArticles: response.articles
@@ -48,7 +48,7 @@ const getReadArticleForUser = async (req, res) => {
 
 // Endpoint - /news/favorites
 const getFavoriteArticleForUser = async (req, res) => {
-	const response = fetchArticlesForUser(req, res, "favorites")
+	const response = fetchArticlesForUser(req, "favorites")
 	return res.status(response.statusCode).send({
 		message: response.message,
 		favoriteArticles: response.articles

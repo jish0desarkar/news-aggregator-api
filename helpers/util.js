@@ -11,7 +11,7 @@ const urlEncodePreferences = (preferences) => {
 	return preferences.join(DELEMETER)
 }
 
-const updateArticleForUser = (req, res, property) => {
+const updateArticleForUser = (req, property) => {
 	if (!["read", "favorites"].includes(property)) {
 		throw new Error("Invalid property")
 	}
@@ -33,7 +33,7 @@ const updateArticleForUser = (req, res, property) => {
 	}
 }
 
-const fetchArticlesForUser = (req, res, property) => {
+const fetchArticlesForUser = (req, property) => {
 	if (!["read", "favorites"].includes(property)) {
 		throw new Error("Invalid property")
 	}
