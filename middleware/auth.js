@@ -1,7 +1,15 @@
 const jwt = require("jsonwebtoken")
 const _ = require("lodash")
 const fs = require("fs")
-const usersFilePath = require("path").join(__dirname, "..", "data_store", "users.json")
+require('dotenv').config
+
+if (process.env.NODE_ENV !== 'test') {
+	var userFileName = "users.json"
+}
+else {
+	var userFileName = "users_test.json"
+}
+const usersFilePath = require("path").join(__dirname, "..", "data_store", `${userFileName}`)
 
 const verifyAndsetCurrentUser = (req, res, next) => {
 	const allUsers = JSON.parse(fs.readFileSync(usersFilePath))
@@ -14,6 +22,7 @@ const verifyAndsetCurrentUser = (req, res, next) => {
 		// to check email exists
 		req.user = _.find(allUsers, { email: payload.email })
 		if (req.user === undefined) return res.status(404).send({ error: "User with this email not found" })
+		if (!user.isEmailVerified) return res.status(403).send({ error: "Email not verified" })
 		next()
 	})
 }

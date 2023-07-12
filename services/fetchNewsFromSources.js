@@ -1,6 +1,6 @@
 const makeRequest = require("../helpers/makeRequest")
 const _ = require("lodash")
-const categories = require("../data_store/categories.json")
+const categories = require("../data_store/allCategories.json")
 const { v4: uuidv4 } = require("uuid")
 
 

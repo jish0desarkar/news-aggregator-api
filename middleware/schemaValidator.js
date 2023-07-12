@@ -3,7 +3,6 @@ const schemas = require("../schemas")
 
 module.exports = () => {
 	return async (req, res, next) => {
-		console.log(req.route.path)
 		const route = req.route.path
 		if (_.has(schemas, route)) {
 			// get the required schema based on the route
