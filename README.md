@@ -318,6 +318,13 @@ Searches for news articles based on the provided keyword.
 }
 ```
 
+## Additional Features
+- Caching Layer - A caching middleware added using Redis. This caches requested articles for 10 minutes.
+Unit tests added for UserController, Auth middleware and utility functions.
+- Rate Limiter - Using Redis a global rate limiter is implemented using Token Bucket algorithm. This allows 10 requests to be made per minute. If the limit is exceeded it blocks further request with 429 code until the limit is restored. This also sets the appropriate rate-limit response headers.
+- Logger - Logger added using Winston. For test and development envs logging is done on Console. For staging and production envs a logfile is maintained along with a minimal console level log. All incoming HTTP requests are logged using a loggine middleware.
+Email Verification - Email Verification flow is setup. After registering an email is sent to the user with a link, upon clicking it the email will be verified.
+
 ## Error Handling
 
 The API includes proper error handling for various scenarios, including:
