@@ -1,0 +1,30 @@
+[
+	{
+		"author": "Pien Huang",
+		"title": "Article 1",
+		"content": "Dr. Mandy Cohen, former secretary of the North Carolina Department of Health and Human Services, will replace outgoing CDC director Rochelle Walensky.\r\nBryan Anderson/AP\r\nPresident Biden has named Dr… [+6757 chars]",
+		"source": "newsapi",
+		"id": "article1"
+	},
+	{
+		"author": "Mariella Moon",
+		"title": "Article 2",
+		"content": "The US government is asking qualified members of the public for help in figuring out how to seize opportunities and overcome challenges associated with generative AI. Gina Raimondo, the US Secretary … [+2557 chars]",
+		"source": "newsapi",
+		"id": "article2"
+	},
+	{
+		"author": "Mia Sato",
+		"title": "G/O Media’s AI ‘innovation’ is off to a rocky start",
+		"content": "G/O Medias AI innovation is off to a rocky start\r\nG/O Medias AI innovation is off to a rocky start\r\n / The company, which owns outlets like The A.V. Club, Gizmodo, and The Onion, announced last week … [+3630 chars]",
+		"source": "newsapi",
+		"id": "article3"
+	},
+	{
+		"author": "https://www.facebook.com/bbcnews",
+		"title": "Silvio Berlusconi obituary: Italy's flamboyant bounce-back politician",
+		"content": "In the labyrinthine world of Italian politics, Silvio Berlusconi was the supreme wheeler-dealer - a man who merged business and public life like no other.\r\nHis flamboyant personality struck a chord w… [+11254 chars]",
+		"source": "newsapi",
+		"id": "article4"
+	}
+]

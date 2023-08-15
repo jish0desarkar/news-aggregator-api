@@ -1,0 +1,14 @@
+[
+	{
+		"email": "test@example.com",
+		"password": "$2b$04$YdCK77BMtCjEUTjLpr42T.Gsu5kkLmTY1H1K8M0cBErsqDZTHSl3u",
+		"preferences": [
+			"Business"
+		],
+		"sources": [],
+		"read": [],
+		"favorites": [
+			"article1"
+		]
+	}
+]
